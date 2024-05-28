@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importando arquivos JavaScript -->
+    <script src="js/homepage.js" defer=""></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Importando arquivos CSS -->
+    <link rel="stylesheet" href="CSS/Homepage.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="./index.js" defer=""></script>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+
+  <body style="margin: 0px; height: 100%;box-sizing: border">
+    <!-- Conteúdo da página -->
+    <div class="container">
+      <!-- Imagem do cabeçalho -->
+      <img style="display: block;margin: auto;cursor: zoom-in;background-color:#fff ;transition: background-color 300ms;" src="https://tigre.service-now.com/df5db597dbe65f004dcd980c8a9619e0.iix" width="506" height="50">
+
+      <form action="Pesquisa material">
+        <fieldset>
+          <!-- Input para inserir número do material -->
+          <div class="input-wrapper">
+            <img src="https://cdn-icons-png.flaticon.com/512/7413/7413873.png" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb" style="max-width: 18px; height: 18px; margin: 0px; width: 403px;" alt="Chave de boca ajustável - ícones de construção e ferramentas grátis" jsname="kn3ccd" aria-hidden="false">
+            <input id="numeroMaterial" type="number" placeholder="Material" name="Material" required="">
+          </div>
+
+          <!-- Input para inserir nome do material -->
+          <div class="input-wrapper">
+            <img style="display: block;margin: auto;cursor: zoom-in;;" src="https://cdn-icons-png.flaticon.com/512/9837/9837644.png" width="23" height="23">
+            <input id="nomeMaterial" placeholder="Nome do material" name="Material" required="">
+          </div>
+        </fieldset>
+      </form>
+      <fieldset>
+        <!-- Tabela de materiais selecionados -->
+        <section class="Material">
+
+          <h3>Material:</h3>
+
+          <div>
+            <ul id="detalhes"></ul>
+            <table width="100%">
+              <thead style="text-align : center">
+                <tr>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>
+                    <div id="Detalhes">
+                      <ul id="detalhes"></ul>
+                    </div>
+                  </th>
+                  <th>
+                    <div class="button">
+                      <button id="reservarMaterialSelecionado">Reservar Material Selecionado</button>
+                    </div>
+                  </th>
+                </tr>
+              </tbody>
+              <tbody>
+
+
+                <tr>
+                  <th> <label for=""></label> </th>
+                  <th><img id="fotoMaterial" src=""></th>
+
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="Materiais">
+          <div id="materiaisSemelhantes">
+            <h3>Materiais Semelhantes:</h3>
+            <ul id="listaSemelhantes"></ul>
+          </div>
+
+        </section>
+        <table width="100%">
+        </table>
+
+      </fieldset>
+    </div>
+
+
+  </body>
+
+</html>
